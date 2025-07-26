@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LICENCE Viewer</title>
+  <title>Zanix Qhove MIT LICENSE 📂</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
@@ -69,7 +69,7 @@
 </head>
 <body>
   <div id="app" class="min-h-screen flex flex-col items-center px-4 py-8">
-    <h1 class="glitch mb-6 mt-4" data-text="MIT LICENCE">MIT LICENCE</h1>
+    <h1 class="glitch mb-6 mt-4" data-text="MIT LICENSE">MIT LICENSE</h1>
 
     <div class="box w-full max-w-3xl rounded-xl shadow-2xl overflow-auto p-6"
          style="max-height: 75vh;">
@@ -86,10 +86,10 @@
         }
       },
       mounted() {
-        fetch('LICENCE')
-          .then(res => res.ok ? res.text() : 'Failed to load LICENCE')
+        fetch('LICENSE')
+          .then(res => res.ok ? res.text() : 'Failed to load LICENSE')
           .then(text => this.licenceContent = text)
-          .catch(err => this.licenceContent = 'Error loading LICENCE 😒');
+          .catch(err => this.licenceContent = 'Error loading LICENSE 😒');
       }
     }).mount('#app');
   </script>
